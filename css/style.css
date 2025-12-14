@@ -5,34 +5,70 @@ p{
     margin: 0;
 }
 .logo>p{
-    color: white;
+    color: #1D4130;
    font-size: large;
-   margin: 10px;
+   margin: 10px 50px 10px 10px;
 }
+.image-text{
+    position: relative;
+}
+.text-block {
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  color: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 500px;
+  color: white;
+}
+.buttons{
+    margin-right: 20px;
+}
+
 .buttons>button{
-    color: white;
+    color: #1D4130;
     border: none;
-    margin: 10px 1px 10px 1px;
+    margin: 1px 8px;
+    font-size: small;
+  text-transform: uppercase;
+  font-weight: bold;
     padding: 5px 0px;
-    background-color: #1B3A24;
-       transition: .4s;
-    
-}
-.buttons>button:hover{
-     border-bottom: 1.5px white solid;
+    background-color: #fff;
+       position: relative !important;
   
 }
 
-.navbar{
-    margin: 0;
-    background-color: #1B3A24;
-    height: 50px;
+.buttons>button::after{
+    content: ""  ;
+    height: 2px   ;
+    position: absolute ;
+    background-color: #1D4130 ;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    transition: all 0.2s ease-in-out ;
+}
+.buttons>button:hover::after  {
+    width: 100% ;
+}
+
+.navbar{    
+    margin: 0;  
+    background-color: #ffff;
+    height: 100px;
+    padding: 0 20px;
      display: flex;
     flex-direction: row;
-    justify-content: space-between;
     text-align: center;
     align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
 } 
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
 body{
     margin: 0;
     padding: 0;
@@ -45,9 +81,19 @@ body{
 .pharmacy-img{
 
  width: 100%;
- height: 100vh;
+ height: 50vh;
  margin: 10 10;
 object-fit: cover;
  border: 1px solid black;
-
+margin-block-end: 0;
+}
+.call-us-button>button{
+    background-color: #1D4130;
+    padding: 15px 35px;
+    color: #fff;
+    border-radius: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border: none;
 }
