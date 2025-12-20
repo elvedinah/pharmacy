@@ -9,10 +9,10 @@ p{
    font-size: large;
    margin: 10px 50px 10px 10px;
 }
-.image-text{
+.EHimage-text{
     position: relative;
 }
-.text-block {
+.EHtext-block {
   position: absolute;
   bottom: 100px;
   right: 20px;
@@ -22,11 +22,11 @@ p{
   width: 500px;
   color: white;
 }
-.buttons{
+.EHbuttons{
     margin-right: 20px;
 }
 
-.buttons>button{
+.EHbuttons>button{
     color: #1D4130;
     border: none;
     margin: 1px 8px;
@@ -39,7 +39,7 @@ p{
   
 }
 
-.buttons>button::after{
+.EHbuttons>button::after{
     content: ""  ;
     height: 2px   ;
     position: absolute ;
@@ -49,11 +49,11 @@ p{
     width: 0%;
     transition: all 0.2s ease-in-out ;
 }
-.buttons>button:hover::after  {
+.EHbuttons>button:hover::after  {
     width: 100% ;
 }
 
-.navbar{    
+.EHnavbar{    
     margin: 0;  
     background-color: #ffff;
     height: 100px;
@@ -65,7 +65,7 @@ p{
     justify-content: space-between;
     border-radius: 10px;
 } 
-.navbar-right{
+.EHnavbar-right{
     display: flex;
     align-items: center;
 }
@@ -74,11 +74,11 @@ body{
     padding: 0;
      font-family: "Oswald", sans-serif;
 }
-.logo{
+.EHlogo{
       margin: 0;
     padding: 0;
 }
-.pharmacy-img{
+.EHpharmacy-img{
 
  width: 100%;
  height: 50vh;
@@ -87,7 +87,7 @@ object-fit: cover;
  border: 1px solid black;
 margin-block-end: 0;
 }
-.call-us-button>button{
+.EHcall-us-button>button{
     background-color: #1D4130;
     padding: 15px 35px;
     color: #fff;
@@ -96,4 +96,30 @@ margin-block-end: 0;
     text-transform: uppercase;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     border: none;
+}
+.EHwhat-we-do{
+    text-align: center;
+    padding-top: 100px;
+    color: #1D4130;
+    margin: 0 300px;
+}
+.EHwhat-we-do-content{
+    display: flex;
+    color: #1D4130;
+     margin: 10px 150px;
+}
+.EHwhat-we-do-image>img{
+    width: 300px;
+    height: 500px;
+}
+.EHwhat-we-do-info{
+    border-bottom: 2px solid #1D4130;
+    padding-top: 20px;
+}
+.EHwhat-we-do-info:nth-child(3){
+   border: none;
+ 
+}
+.EHtitle.span{
+    font-size: 28px;
 }
