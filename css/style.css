@@ -1,9 +1,3 @@
-.test{
-    color:brown;
-}
-p{
-    margin: 0;
-}
 .logo>p{
     color: #1D4130;
    font-size: large;
@@ -106,20 +100,257 @@ margin-block-end: 0;
 .EHwhat-we-do-content{
     display: flex;
     color: #1D4130;
-     margin: 10px 150px;
+     padding: 30px 150px 30px 0px;
 }
 .EHwhat-we-do-image>img{
     width: 300px;
-    height: 500px;
+    height: 400px;
 }
 .EHwhat-we-do-info{
-    border-bottom: 2px solid #1D4130;
+    border-bottom: 1.5px solid #1D4130;
     padding-top: 20px;
-}
+}   
 .EHwhat-we-do-info:nth-child(3){
    border: none;
  
 }
-.EHtitle.span{
-    font-size: 28px;
+.EHcontent{
+    border-top: 1.5px solid #1D4130;
+    padding: 40px 0px;
+    display: flex;
 }
+.EHstore>button {
+      color: #4a9a38;
+      background-color: #1D4130;
+      background: #5AA45D33;
+      padding: 14px 40px;
+      border-radius: 35px;
+      font-weight: bold;
+      border: none;
+      width: 200px;
+     font-size: 16px;
+     margin-right: 50px;
+     text-transform: uppercase;
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.24);
+-webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.24);
+-moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.24);
+}
+.EHtitle {
+    margin-left: 0px;
+}
+.EHtitle >b >h1{
+    color: #1D4130;
+    font-weight: bold;
+    font-size: 50px;
+}
+.EHproduct-card{
+    padding: 15px;
+    width: 300px;
+    height: 450px;
+    border: 2px solid black;
+}
+.EHproduct-image >img{ 
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 305px;
+    object-fit: contain;
+}
+.EHproduct-price >p{
+    color: #4a9a38;
+}
+.EHproduct-button >button{
+      color: white;
+      background-color: #4a9a38;
+      padding: 5px 20px;
+      border-radius: 35px;
+      border: none;
+    text-transform: uppercase;
+}
+.EHproducts-container{
+    display: flex;
+    justify-content: space-between;
+}
+.EHjourney{
+    display: flex;
+     margin-top: 200px;
+    border-top: 1.5px solid #1D4130;
+}
+.EHjourney-text{
+    padding: 40px 10px;
+    color: #1D4130;
+    padding: 30px 150px 30px 0px;
+    margin-top: 70px;
+}
+.EHjourney-text >h2{
+    font-size: 70px;
+    padding-bottom: 50px;
+    font-weight: bolder;
+}
+.EHjourney-text >h4{
+    font-size: 40px;
+    font-weight: bold;
+}
+.EHjourney-text >p{
+ font-size: 20px;
+}
+.EHjourney-image >img{
+     width: 300px;
+    height: 500px;
+    margin-right: 270px;
+    margin-top: 100px;
+}
+.EHboxes-container{
+    display: flex;
+    width: 100%;
+ 
+    justify-content: space-between;
+}
+.EHboxe{
+    text-align: center;
+    width: 100%;
+    border: 2px solid #1D4130;
+    padding: 10px ;
+    color: #1D4130;
+}
+.EHboxe + .EHboxe{
+   border-left: none;
+}
+.EHboxe h3{
+    font-size: 60px;
+}
+.EHboxe p{
+    font-weight: bold;
+    font-size: 20px;
+}
+.EHproductrange-button >button{
+      color: #4a9a38;
+      background-color: #1D4130;
+      background: #5AA45D33;
+      padding: 14px 40px;
+      border-radius: 35px;
+      font-weight: bold;
+      border: none;
+      width: 33;
+     font-size: 18px;
+     margin-top: 80px;
+     margin-left: 530px;
+     margin-bottom: 30px;
+     text-transform: uppercase;
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.24);
+}
+.EHtitlerange h2{
+    color: #1D4130;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;  
+}
+.EHtitlerange p{
+    color: #1D4130;
+    margin-top: 20px;
+    text-align: center;
+}
+.EHcardicon{
+    border-radius: 100px;
+    display: flex;
+  margin: 20px;
+}
+.EHcardicon i{
+
+   height: 90px;
+   width: 90px;
+   background-color: #5AA45D33;
+   border-radius: 50%;
+   font-size: 38px;
+   color: #4a9a38;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.EHcardicon h4{
+  padding-left: 15px;
+   text-align: start;
+   color: #1D4130;
+   font-size: 20px;
+   padding-top: 30px;
+   font-weight: bolder;
+}
+.EHbrowse-button button{
+     background-color: #1D4130;
+    padding: 15px 35px;
+    color: #fff;
+    border-radius: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+.EHbrowse-button{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.EH-section{
+    padding: 100px 0;
+    border-top: #1D4130 2px solid;
+    border-bottom: #1D4130 2px solid;
+}
+.EHtestimonal-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.EHtestimonal-button{
+          color: #4a9a38;
+      background: #5AA45D33;
+      padding: 14px 40px;
+      border-radius: 35px;
+      font-weight: bold;
+      border: none;
+      width: fit-content;
+     font-size: 18px;
+     text-transform: uppercase;
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.24);
+}
+.EHtestimonal-title{
+    color: #1D4130; 
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+.EH-testimonal-carosuel{
+    height: 300px !important;
+   width: 100%;
+}
+.EH-testimonal-carosuel img{
+      height: 300px;
+ object-fit: contain;
+}
+.EHcarousel-arrow{
+    background-color: black !important;
+}
+.EHcarousel-quotes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 20%;
+    height: 100%;
+}
+.EHcarousel-quotes p{
+    font-size: 24px;
+    font-style: italic;
+}
+.EHcarousel-author{
+    color: #1D4130;
+    font-weight: bold;
+    font-size: 22px;
+}
+.EHcarousel-place{
+    color: #1D4130;
+    font-size: 22px;
+}
+
