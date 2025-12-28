@@ -1,27 +1,9 @@
 .logo>p{
-    color: #1D4130;
    font-size: large;
    margin: 10px 50px 10px 10px;
 }
-.EHimage-text{
-    position: relative;
-}
-.EHtext-block {
-  position: absolute;
-  bottom: 100px;
-  right: 20px;
-  color: #fff;
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 500px;
-  color: white;
-}
-.EHbuttons{
-    margin-right: 20px;
-}
 
 .EHbuttons>button{
-    color: #1D4130;
     border: none;
     margin: 1px 8px;
     font-size: small;
@@ -47,35 +29,19 @@
     width: 100% ;
 }
 
-.EHnavbar{    
-    margin: 0;  
-    background-color: #ffff;
-    height: 100px;
-    padding: 0 20px;
-     display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 10px;
-} 
 .EHnavbar-right{
     display: flex;
     align-items: center;
-}
+}   
 body{
     margin: 0;
     padding: 0;
+    color: #1D4130 !important;
      font-family: "Oswald", sans-serif;
 }
-.EHlogo{
-      margin: 0;
-    padding: 0;
-}
 .EHpharmacy-img{
-
  width: 100%;
- height: 50vh;
+ height: 85vh;
  margin: 10 10;
 object-fit: cover;
  border: 1px solid black;
@@ -91,18 +57,8 @@ margin-block-end: 0;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     border: none;
 }
-.EHwhat-we-do{
-    text-align: center;
-    padding-top: 100px;
-    color: #1D4130;
-    margin: 0 300px;
-}
-.EHwhat-we-do-content{
-    display: flex;
-    color: #1D4130;
-     padding: 30px 150px 30px 0px;
-}
-.EHwhat-we-do-image>img{
+
+.EHwhat-we-do-image{
     width: 300px;
     height: 400px;
 }
@@ -112,14 +68,9 @@ margin-block-end: 0;
 }   
 .EHwhat-we-do-info:nth-child(3){
    border: none;
- 
 }
-.EHcontent{
-    border-top: 1.5px solid #1D4130;
-    padding: 40px 0px;
-    display: flex;
-}
-.EHstore>button {
+
+.EHstore {
       color: #4a9a38;
       background-color: #1D4130;
       background: #5AA45D33;
@@ -127,7 +78,8 @@ margin-block-end: 0;
       border-radius: 35px;
       font-weight: bold;
       border: none;
-      width: 200px;
+      width:min-content;
+      height: fit-content;
      font-size: 16px;
      margin-right: 50px;
      text-transform: uppercase;
@@ -139,7 +91,6 @@ margin-block-end: 0;
     margin-left: 0px;
 }
 .EHtitle >b >h1{
-    color: #1D4130;
     font-weight: bold;
     font-size: 50px;
 }
@@ -165,6 +116,7 @@ margin-block-end: 0;
       border-radius: 35px;
       border: none;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .EHproducts-container{
     display: flex;
@@ -172,15 +124,12 @@ margin-block-end: 0;
 }
 .EHjourney{
     display: flex;
-     margin-top: 200px;
-    border-top: 1.5px solid #1D4130;
 }
 .EHjourney-text{
     padding: 40px 10px;
-    color: #1D4130;
-    padding: 30px 150px 30px 0px;
-    margin-top: 70px;
-}
+    padding: 0px 150px 30px 0px;}
+
+
 .EHjourney-text >h2{
     font-size: 70px;
     padding-bottom: 50px;
@@ -196,13 +145,11 @@ margin-block-end: 0;
 .EHjourney-image >img{
      width: 300px;
     height: 500px;
-    margin-right: 270px;
-    margin-top: 100px;
 }
 .EHboxes-container{
     display: flex;
     width: 100%;
- 
+
     justify-content: space-between;
 }
 .EHboxe{
@@ -210,7 +157,6 @@ margin-block-end: 0;
     width: 100%;
     border: 2px solid #1D4130;
     padding: 10px ;
-    color: #1D4130;
 }
 .EHboxe + .EHboxe{
    border-left: none;
@@ -222,6 +168,10 @@ margin-block-end: 0;
     font-weight: bold;
     font-size: 20px;
 }
+.EHproductrange-button{
+    display: flex;
+    justify-content: center;
+}
 .EHproductrange-button >button{
       color: #4a9a38;
       background-color: #1D4130;
@@ -232,30 +182,21 @@ margin-block-end: 0;
       border: none;
       width: 33;
      font-size: 18px;
-     margin-top: 80px;
-     margin-left: 530px;
      margin-bottom: 30px;
      text-transform: uppercase;
   box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.24);
 }
 .EHtitlerange h2{
-    color: #1D4130;
     font-weight: bold;
     font-size: 45px;
     text-align: center;  
 }
 .EHtitlerange p{
-    color: #1D4130;
     margin-top: 20px;
     text-align: center;
 }
-.EHcardicon{
-    border-radius: 100px;
-    display: flex;
-  margin: 20px;
-}
-.EHcardicon i{
 
+.EHcardicon i{
    height: 90px;
    width: 90px;
    background-color: #5AA45D33;
@@ -269,7 +210,6 @@ margin-block-end: 0;
 .EHcardicon h4{
   padding-left: 15px;
    text-align: start;
-   color: #1D4130;
    font-size: 20px;
    padding-top: 30px;
    font-weight: bolder;
@@ -292,7 +232,7 @@ margin-block-end: 0;
 }
 .EH-section{
     padding: 100px 0;
-    border-top: #1D4130 2px solid;
+   
     border-bottom: #1D4130 2px solid;
 }
 .EHtestimonal-section{
@@ -304,7 +244,7 @@ margin-block-end: 0;
 }
 
 .EHtestimonal-button{
-          color: #4a9a38;
+      color: #4a9a38;
       background: #5AA45D33;
       padding: 14px 40px;
       border-radius: 35px;
@@ -315,8 +255,7 @@ margin-block-end: 0;
      text-transform: uppercase;
   box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.24);
 }
-.EHtestimonal-title{
-    color: #1D4130; 
+.EHtestimonal-title{ 
     font-size: 48px;
     font-weight: bold;
     text-align: center;
@@ -345,12 +284,101 @@ margin-block-end: 0;
     font-style: italic;
 }
 .EHcarousel-author{
-    color: #1D4130;
     font-weight: bold;
     font-size: 22px;
 }
 .EHcarousel-place{
-    color: #1D4130;
     font-size: 22px;
 }
+.EHstore-button button{
+     background-color: #4a9a38;
+    padding: 15px 35px;
+    color: #fff;
+    border-radius: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+.EHstore-button{
+     width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.EHFAQ-button button{
+      color: #4a9a38;
+      background: #5AA45D33;
+      padding: 14px 40px;
+      border-radius: 35px;
+      font-weight: bold;
+      border: none;
+      width:fit-content ;
+     font-size: 18px;
+     text-transform: uppercase;
+     box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.24)
+}
+.EHFAQ-content{
+    display: flex;
+    width: 100%;
+}
+.EHFAQ-left h2{
+font-weight: bolder;
+    font-size: 50px;
+}
+.EHFAQ-left{
+    padding: 5px;
+    width: 30%;
+}
+.EHFAQ-right{
+     width: 70%;
+     padding-left: 80px;
+}
+.EHFAQ-left p{
+    font-size: 24px;
+}
+.EHFAQ-right .btn{
+    background-color: white;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+}
+.EHFAQ-right .btn:focus{
+    box-shadow: none;
+}
+.EHFAQ-right .card{
+    border-bottom: #1D4130 2px solid !important;
+}
 
+.EHFAQ-right .btn{
+    font-size: 28px;
+    font-weight: bold;
+}
+.EHFAQ-right .card-body{
+    font-size: 18px;
+}
+
+.EHlogo img{
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+}
+.EHfooter-nav button{
+
+    border: none;
+    margin: 1px 8px;
+    font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+    padding: 5px 0px;
+    background-color: #fff;
+       position: relative !important;
+       cursor: pointer;
+}
+.EHfooter-social i{
+    font-size: 32px;
+    color: #00723d;
+}
+.EHfooter-section{
+    border-bottom: 2px solid black;
+}
