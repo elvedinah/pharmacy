@@ -7,11 +7,11 @@
     border: none;
     margin: 1px 8px;
     font-size: small;
-  text-transform: uppercase;
-  font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
     padding: 5px 0px;
     background-color: #fff;
-       position: relative !important;
+    position: relative !important;
   
 }
 
@@ -118,12 +118,14 @@ margin-block-end: 0;
     text-transform: uppercase;
     cursor: pointer;
 }
+
 .EHproducts-container{
     display: flex;
     justify-content: space-between;
 }
 .EHjourney{
     display: flex;
+    margin-left: 20px;
 }
 .EHjourney-text{
     padding: 40px 10px;
@@ -142,14 +144,20 @@ margin-block-end: 0;
 .EHjourney-text >p{
  font-size: 20px;
 }
+.EHjourney-text >a{
+    color: #1D4130;
+   font-weight: bolder;
+    font-size: 20px;
+    justify-content: space-between;
+}
 .EHjourney-image >img{
      width: 300px;
     height: 500px;
+    margin-right: 20px;
 }
 .EHboxes-container{
     display: flex;
     width: 100%;
-
     justify-content: space-between;
 }
 .EHboxe{
@@ -184,7 +192,7 @@ margin-block-end: 0;
      font-size: 18px;
      margin-bottom: 30px;
      text-transform: uppercase;
-  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.24);
+     box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.24);
 }
 .EHtitlerange h2{
     font-weight: bold;
@@ -232,8 +240,7 @@ margin-block-end: 0;
 }
 .EH-section{
     padding: 100px 0;
-   
-    border-bottom: #1D4130 2px solid;
+    border-bottom: #1D4130 1.5px solid;
 }
 .EHtestimonal-section{
     display: flex;
@@ -291,7 +298,7 @@ margin-block-end: 0;
     font-size: 22px;
 }
 .EHstore-button button{
-     background-color: #4a9a38;
+     background-color: #1D4130;
     padding: 15px 35px;
     color: #fff;
     border-radius: 35px;
@@ -372,13 +379,123 @@ font-weight: bolder;
   font-weight: bold;
     padding: 5px 0px;
     background-color: #fff;
-       position: relative !important;
-       cursor: pointer;
+    position: relative !important;
+   cursor: pointer;
 }
 .EHfooter-social i{
     font-size: 32px;
     color: #00723d;
 }
 .EHfooter-section{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #1D4130;
+}
+.EHSTORY-content{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     border: 2px solid #1D4130 ;
+}
+.EHSTORY-left{
+    padding: 5px;
+    width:100%;
+    border-right:2px solid #1D4130 ;
+}
+.EHSTORY-right img{
+width: 100%;
+height: 100%;
+}
+.EHSTORY-left h1{
+font-size: 60px;  
+margin: 25px 5px;  
+font-weight: bold;
+}
+.EHSTORY-left p{
+    margin-left: 5px;
+    font-size: 18px;
+}
+.EHSTORY-date{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 30px;
+    text-align: center;
+    color: #1D4130;
+}
+.EHSTORY-date h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+.EHSTORY-date b{
+    font-size: 18px;
+    font-weight: bold;
+}
+.EHDNA{
+       margin: 0 230px;
+}
+.EHDNA h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+.EHDNA img{
+    width: 100%;
+    height: 305px;
+    object-fit: contain;
+}
+.EHDNA-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 2px solid #1D4130;
+    
+   
+}
+.EHDNA-content h3{
+    width: 50%;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+  
+
+}
+.EHDNA-content p{
+    width: 50%;
+    margin-top: 20px;
+}
+.EHoveryears-left h1{
+    font-weight: bolder;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+}
+.EHoveryears-left h2{
+font-size: 40px;
+font-weight: bolder;
+}
+.EHoveryears-left p{
+    font-size: 19px;
+    margin: 15px 10px;
+}
+.EHoveryears-right {
+    width: clamp(300px, 42%, 680px);
+    height: auto;
+    margin: 0 10px;
+}
+.EHimglogo{
+   border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    max-width: 100%;
+}
+.EHmision h4 {
+ margin-bottom: 15px;
+}
+.EHmision p {
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+.EH-iconstitle h1{
+    margin-bottom:80px ;
+    font-weight: none;
 }
