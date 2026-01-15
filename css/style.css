@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    color: #1D4130 !important;
+    color: #1d3741 !important;
      font-family: "Oswald", sans-serif;
 }
 .logo>p{
@@ -25,7 +25,7 @@ body{
     content: ""  ;
     height: 2px   ;
     position: absolute ;
-    background-color: #1D4130 ;
+    background-color: #1d3741 ;
     bottom: 0;
     left: 0;
     width: 0%;
@@ -48,7 +48,7 @@ object-fit: cover;
 margin-block-end: 0;
 }
 .EHcall-us-button>button{
-    background-color: #1D4130;
+    background-color: #1d3741;
     padding: 15px 35px;
     color: #fff;
     border-radius: 35px;
@@ -62,7 +62,7 @@ margin-block-end: 0;
     height: 400px;
 }
 .EHwhat-we-do-info{
-    border-bottom: 1.5px solid #1D4130;
+    border-bottom: 1.5px solid #1d3741;
     padding-top: 20px;
 }   
 .EHwhat-we-do-info:nth-child(3){
@@ -70,9 +70,9 @@ margin-block-end: 0;
 }
 
 .EHstore {
-      color: #4a9a38;
-      background-color: #1D4130;
-      background: #5AA45D33;
+      color: #38649a;
+      background-color: #1d3741;
+      background: #5a73a433;
       padding: 14px 40px;
       border-radius: 35px;
       font-weight: bold;
@@ -107,11 +107,11 @@ margin-block-end: 0;
     object-fit: contain;
 }
 .EHproduct-price >p{
-    color: #4a9a38;
+    color: #38649a;
 }
 .EHproduct-button >button{
       color: white;
-      background-color: #4a9a38;
+      background-color: #38649a;
       padding: 5px 20px;
       border-radius: 35px;
       border: none;
@@ -119,7 +119,7 @@ margin-block-end: 0;
     cursor: pointer;
 }
 .EH-product button{
-     background-color: #1D4130;
+     background-color: #1d3741;
     padding: 13px 35px;
     color: #fff;
     border-radius: 35px;
@@ -161,7 +161,7 @@ margin-block-end: 0;
  font-size: 20px;
 }
 .EHjourney-text >a{
-    color: #1D4130;
+    color: #1d3741;
    font-weight: bolder;
     font-size: 20px;
     justify-content: space-between;
@@ -179,7 +179,7 @@ margin-block-end: 0;
 .EHboxe{
     text-align: center;
     width: 100%;
-    border: 2px solid #1D4130;
+    border: 2px solid #1d3741;
     padding: 10px ;
 }
 .EHboxe + .EHboxe{
@@ -197,9 +197,9 @@ margin-block-end: 0;
     justify-content: center;
 }
 .EHproductrange-button >button{
-      color: #4a9a38;
-      background-color: #1D4130;
-      background: #5AA45D33;
+      color: #38649a;
+      background-color: #1d3741;
+      background: #5a73a433;
       padding: 14px 40px;
       border-radius: 35px;
       font-weight: bold;
@@ -223,10 +223,10 @@ margin-block-end: 0;
 .EHcardicon i{
    height: 90px;
    width: 90px;
-   background-color: #5AA45D33;
+   background-color: #5a73a433;
    border-radius: 50%;
    font-size: 38px;
-   color: #4a9a38;
+   color: #38649a;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -239,7 +239,7 @@ margin-block-end: 0;
    font-weight: bolder;
 }
 .EHbrowse-button button{
-     background-color: #1D4130;
+     background-color: #1d3741;
     padding: 15px 35px;
     color: #fff;
     border-radius: 35px;
@@ -256,7 +256,7 @@ margin-block-end: 0;
 }
 .EH-section{
     padding: 100px 0;
-    border-bottom: #1D4130 1.5px solid;
+    border-bottom: #1d3741 1.5px solid;
 }
 .EHtestimonal-section{
     display: flex;
@@ -267,8 +267,8 @@ margin-block-end: 0;
 }
 
 .EHtestimonal-button{
-      color: #4a9a38;
-      background: #5AA45D33;
+      color: #38649a;
+      background: #5a73a433;
       padding: 14px 40px;
       border-radius: 35px;
       font-weight: bold;
@@ -314,7 +314,7 @@ margin-block-end: 0;
     font-size: 22px;
 }
 .EHstore-button button{
-     background-color: #1D4130;
+     background-color: #1d3741;
     padding: 15px 35px;
     color: #fff;
     border-radius: 35px;
@@ -330,8 +330,8 @@ margin-block-end: 0;
     justify-content: center;
 }
 .EHFAQ-button button{
-      color: #4a9a38;
-      background: #5AA45D33;
+      color: #38649a;
+      background: #5a73a433;
       padding: 14px 40px;
       border-radius: 35px;
       font-weight: bold;
@@ -370,7 +370,7 @@ font-weight: bolder;
     box-shadow: none;
 }
 .EHFAQ-right .card{
-    border-bottom: #1D4130 2px solid !important;
+    border-bottom: #1d3741 2px solid !important;
 }
 
 .EHFAQ-right .btn{
@@ -400,21 +400,21 @@ font-weight: bolder;
 }
 .EHfooter-social i{
     font-size: 32px;
-    color: #00723d;
+    color: #38649a;
 }
 .EHfooter-section{
-    border-bottom: 2px solid #1D4130;
+    border-bottom: 2px solid #1d3741;
 }
 .EHSTORY-content{
      width: 100%;
      display: flex;
      justify-content: space-between;
-     border: 2px solid #1D4130 ;
+     border: 2px solid #1d3741 ;
 }
 .EHSTORY-left{
     padding: 5px;
     width:100%;
-    border-right:2px solid #1D4130 ;
+    border-right:2px solid #1d3741 ;
 }
 .EHSTORY-right img{
 width: 100%;
@@ -434,7 +434,7 @@ font-weight: bold;
     justify-content: space-between;
     margin: 60px 30px;
     text-align: center;
-    color: #1D4130;
+    color: #1d3741;
 }
 .EHSTORY-date h2{
     font-size: 60px;
@@ -462,7 +462,7 @@ font-weight: bold;
     width: 100%;
     justify-content: space-between;
     margin-top: 40px;
-    border-top: 2px solid #1D4130;
+    border-top: 2px solid #1d3741;
     
    
 }
@@ -516,7 +516,7 @@ font-weight: bolder;
     font-weight: none;
 }
 .EHcontact{
-    border-top:#1D4130 1.5px solid;
+    border-top:#1d3741 1.5px solid;
     padding: 100px 0;
 }
 .EHcontact h1{
@@ -531,7 +531,7 @@ font-weight: bolder;
 }
 .EHcustominput{
     border: none;
-    border-bottom: #1D4130 2px solid !important;
+    border-bottom: #1d3741 2px solid !important;
     width: 100%;
     height: 50px;
     padding: 5px 10px;
@@ -546,7 +546,7 @@ font-weight: bolder;
     box-shadow: -6px 1px 17px -4px rgba(66, 68, 90, 1);;
 }
 .EH-Message {
-      background-color: #1D4130;
+      background-color: #1d3741;
     padding: 15px 35px;
     color: #fff;
     border-radius: 35px;
@@ -558,10 +558,10 @@ font-weight: bolder;
 .EHcardiconn i{
      height: 130px;
    width: 130px;
-   background-color: #5AA45D33;
+   background-color: #5a73a433;
    border-radius: 50%;
    font-size: 38px;
-   color: #4a9a38;
+   color: #38649a;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -719,9 +719,14 @@ font-weight: bolder;
 
 .EH-staff-member {
     background-color: #f9f9f9;
-    padding: 15px;
+    padding: 22px;
     border-radius: 8px;
     width: 200px;
+    transition: ease-in-out .2s;
+}
+.EH-staff-member:hover{
+    transition: ease-in-out .2s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .EH-staff-member img {
@@ -729,6 +734,7 @@ font-weight: bolder;
     height: 180px;
     border-radius: 50%;
     margin-bottom: 10px;
+    object-fit: cover;
 }
 
 .EH-staff-member h3 {
@@ -787,11 +793,11 @@ font-weight: bolder;
     object-fit: contain;
 }
 .EHproduct-pricee >p{
-    color: #4a9a38;
+    color: #38649a;
 }
 .EHproduct-buttonn >button{
       color: white;
-      background-color: #4a9a38;
+      background-color: #38649a;
       padding: 5px 20px;
       border-radius: 35px;
       border: none;
@@ -801,6 +807,6 @@ font-weight: bolder;
 .EHpages{
     font-size: 25px;
     font-weight: bold;
-    color: #1D4130;
+    color: #1d3741;
     
 }
