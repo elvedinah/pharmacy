@@ -38,14 +38,48 @@ body{
 .EHnavbar-right{
     display: flex;
     align-items: center;
+}
+
+.EHbuttons-mobile {
+    border: 1px solid #1d3741;
+}
+
+.EHbuttons-mobile button {
+    text-align: left;
+    padding: 10px 0;
+    border: none;
+    background: none;
+    color: #1d3741;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.EHbuttons-mobile button:hover {
+    background-color: #f8f9fa;
 }   
 .EHpharmacy-img{
  width: 100%;
  height: 85vh;
- margin: 10 10;
-object-fit: cover;
+ max-height: 600px;
+ margin: 0;
+ object-fit: cover;
  border: 1px solid black;
-margin-block-end: 0;
+ margin-block-end: 0;
+}
+
+@media (max-width: 768px) {
+ .EHpharmacy-img{
+  height: 50vh;
+  min-height: 300px;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHpharmacy-img{
+  height: 40vh;
+  min-height: 250px;
+ }
 }
 .EHcall-us-button>button{
     background-color: #1d3741;
@@ -97,8 +131,28 @@ margin-block-end: 0;
 .EHproduct-card{
     padding: 15px;
     width: 300px;
-    height: 470px;
+    max-width: 100%;
+    height: auto;
+    min-height: 470px;
     border: 2px solid black;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+ .EHproduct-card{
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 20px auto;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHproduct-card{
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+ }
 }
 .EHproduct-image >img{ 
     border-bottom: 2px solid black;
@@ -138,38 +192,144 @@ margin-block-end: 0;
 .EHproducts-container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+ .EHproducts-container{
+  justify-content: center;
+  gap: 15px;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHproducts-container{
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+ }
 }
 .EHjourney{
     display: flex;
-    margin-left: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.EHjourney-text{
-    padding: 40px 10px;
-    padding: 0px 150px 30px 0px;}
 
+@media (max-width: 768px) {
+ .EHjourney{
+  flex-direction: column;
+  text-align: center;
+ }
+}
+
+.EHjourney-text{
+    flex: 1;
+    min-width: 300px;
+    padding: 40px 20px;
+}
+
+@media (max-width: 1200px) {
+ .EHjourney-text{
+  padding: 20px 10px;
+ }
+}
+
+@media (max-width: 768px) {
+ .EHjourney-text{
+  padding: 20px 0;
+  order: 2;
+ }
+}
 
 .EHjourney-text >h2{
     font-size: 70px;
     padding-bottom: 50px;
     font-weight: bolder;
 }
+
+@media (max-width: 768px) {
+ .EHjourney-text >h2{
+  font-size: 50px;
+  padding-bottom: 30px;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHjourney-text >h2{
+  font-size: 40px;
+  padding-bottom: 20px;
+ }
+}
+
 .EHjourney-text >h4{
     font-size: 40px;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+ .EHjourney-text >h4{
+  font-size: 32px;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHjourney-text >h4{
+  font-size: 28px;
+ }
+}
+
 .EHjourney-text >p{
  font-size: 20px;
+ line-height: 1.6;
 }
+
+@media (max-width: 576px) {
+ .EHjourney-text >p{
+  font-size: 18px;
+ }
+}
+
 .EHjourney-text >a{
     color: #1d3741;
    font-weight: bolder;
     font-size: 20px;
-    justify-content: space-between;
 }
+
+.EHjourney-image{
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+ .EHjourney-image{
+  margin-right: 0;
+  margin-bottom: 20px;
+  order: 1;
+ }
+}
+
 .EHjourney-image >img{
      width: 300px;
     height: 500px;
-    margin-right: 20px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+ .EHjourney-image >img{
+  width: 250px;
+  height: 400px;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHjourney-image >img{
+  width: 200px;
+  height: 300px;
+ }
 }
 .EHboxes-container{
     display: flex;
@@ -191,6 +351,40 @@ margin-block-end: 0;
 .EHboxe p{
     font-weight: bold;
     font-size: 20px;
+}
+
+@media (max-width: 768px) {
+ .EHboxes-container{
+  flex-direction: column;
+ }
+ .EHboxe{
+  margin-bottom: 0;
+  border-bottom: none;
+  border-top: 2px solid #1d3741;
+  padding: 20px;
+ }
+ .EHboxe:first-child{
+  border-top: 2px solid #1d3741;
+ }
+ .EHboxe:last-child{
+  border-bottom: 2px solid #1d3741;
+ }
+ .EHboxe + .EHboxe{
+  border-left: 2px solid #1d3741;
+  border-top: none;
+ }
+ .EHboxe h3{
+  font-size: 48px;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHboxe h3{
+  font-size: 40px;
+ }
+ .EHboxe p{
+  font-size: 18px;
+ }
 }
 .EHproductrange-button{
     display: flex;
@@ -278,10 +472,22 @@ margin-block-end: 0;
      text-transform: uppercase;
   box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.24);
 }
-.EHtestimonal-title{ 
+.EHtestimonal-title{
     font-size: 48px;
     font-weight: bold;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+ .EHtestimonal-title{
+  font-size: 36px;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHtestimonal-title{
+  font-size: 28px;
+ }
 }
 .EH-testimonal-carosuel{
     height: 300px !important;
@@ -301,6 +507,18 @@ margin-block-end: 0;
     align-items: center;
     padding: 0 20%;
     height: 100%;
+}
+
+@media (max-width: 768px) {
+ .EHcarousel-quotes{
+  padding: 0 10%;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHcarousel-quotes{
+  padding: 0 5%;
+ }
 }
 .EHcarousel-quotes p{
     font-size: 24px;
@@ -344,18 +562,55 @@ margin-block-end: 0;
 .EHFAQ-content{
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+ .EHFAQ-content{
+  flex-direction: column;
+ }
+}
+
 .EHFAQ-left h2{
 font-weight: bolder;
     font-size: 50px;
 }
-.EHFAQ-left{
-    padding: 5px;
-    width: 30%;
+
+@media (max-width: 768px) {
+ .EHFAQ-left h2{
+  font-size: 40px;
+ }
 }
+
+@media (max-width: 576px) {
+ .EHFAQ-left h2{
+  font-size: 32px;
+ }
+}
+
+.EHFAQ-left{
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+@media (max-width: 768px) {
+ .EHFAQ-left{
+  text-align: center;
+  padding: 15px;
+ }
+}
+
 .EHFAQ-right{
-     width: 70%;
+     flex: 2;
      padding-left: 80px;
+}
+
+@media (max-width: 768px) {
+ .EHFAQ-right{
+  padding-left: 20px;
+  padding-right: 20px;
+ }
 }
 .EHFAQ-left p{
     font-size: 24px;
@@ -405,20 +660,67 @@ font-weight: bolder;
 .EHfooter-section{
     border-bottom: 2px solid #1d3741;
 }
+
+@media (max-width: 768px) {
+ .EHfooter-section{
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0;
+ }
+ .EHfooter-nav{
+  margin: 20px 0;
+ }
+ .EHfooter-social{
+  margin-top: 20px;
+ }
+}
 .EHSTORY-content{
      width: 100%;
      display: flex;
      justify-content: space-between;
      border: 2px solid #1d3741 ;
+     flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+ .EHSTORY-content{
+  flex-direction: column;
+ }
+}
+
 .EHSTORY-left{
-    padding: 5px;
-    width:100%;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
     border-right:2px solid #1d3741 ;
 }
+
+@media (max-width: 768px) {
+ .EHSTORY-left{
+  border-right: none;
+  border-bottom: 2px solid #1d3741 ;
+  padding: 15px;
+ }
+}
+
+.EHSTORY-right{
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+}
+
 .EHSTORY-right img{
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+ .EHSTORY-right img{
+  max-height: 300px;
+ }
 }
 .EHSTORY-left h1{
 font-size: 60px;  
@@ -445,38 +747,93 @@ font-weight: bold;
     font-weight: bold;
 }
 .EHDNA{
-       margin: 0 230px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
+
+@media (max-width: 1200px) {
+ .EHDNA{
+  margin: 0 50px;
+ }
+}
+
+@media (max-width: 768px) {
+ .EHDNA{
+  margin: 0 20px;
+ }
+}
+
 .EHDNA h2{
     text-align: center;
     font-weight: bold;
     font-size: 40px;
 }
+
+@media (max-width: 768px) {
+ .EHDNA h2{
+  font-size: 32px;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHDNA h2{
+  font-size: 28px;
+ }
+}
+
 .EHDNA img{
     width: 100%;
     height: 305px;
     object-fit: contain;
 }
+
+@media (max-width: 768px) {
+ .EHDNA img{
+  height: 250px;
+ }
+}
+
 .EHDNA-content{
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-top: 40px;
     border-top: 2px solid #1d3741;
-    
-   
+    flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+ .EHDNA-content{
+  flex-direction: column;
+ }
+}
+
 .EHDNA-content h3{
-    width: 50%;
+    flex: 1;
+    min-width: 250px;
     margin-top: 20px;
     font-size: 28px;
     font-weight: bold;
-  
-
 }
+
+@media (max-width: 768px) {
+ .EHDNA-content h3{
+  font-size: 24px;
+  margin-top: 15px;
+ }
+}
+
 .EHDNA-content p{
-    width: 50%;
+    flex: 1;
+    min-width: 250px;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+ .EHDNA-content p{
+  margin-top: 10px;
+ }
 }
 .EHoveryears-left h1{
     font-weight: bolder;
@@ -519,15 +876,47 @@ font-weight: bolder;
     border-top:#1d3741 1.5px solid;
     padding: 100px 0;
 }
+
+@media (max-width: 768px) {
+ .EHcontact{
+  padding: 50px 20px;
+ }
+}
+
 .EHcontact h1{
     font-size: 60px;
    font-family: Arial, Helvetica, sans-serif;
    text-align: center;
 }
+
+@media (max-width: 768px) {
+ .EHcontact h1{
+  font-size: 40px;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHcontact h1{
+  font-size: 32px;
+ }
+}
 .EHcardicon p{
     padding-left: 10px;
     padding-top: 15px;
     font-size: 20px;
+}
+
+@media (max-width: 576px) {
+ .EHcardicon{
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+ }
+ .EHcardicon p{
+  padding-left: 0;
+  padding-top: 10px;
+  font-size: 16px;
+ }
 }
 .EHcustominput{
     border: none;
@@ -567,19 +956,50 @@ font-weight: bolder;
    justify-content: center;
 }
 .EH-service-content {
-    
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+ .EH-service-content{
+  flex-direction: column;
+  text-align: center;
+ }
 }
 .EH-title {
     text-align: center;
     color: #1b5e20;
     margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+ .EH-title {
+  font-size: 2rem;
+ }
+}
+
+@media (max-width: 576px) {
+ .EH-title {
+  font-size: 1.8rem;
+ }
 }
 
 .EH-description {
     text-align: center;
     color: #555;
     margin-bottom: 30px;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 576px) {
+ .EH-description {
+  font-size: 1rem;
+  padding: 0 20px;
+ }
 }
 
 .EH-service-list {
@@ -653,6 +1073,14 @@ font-weight: bolder;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+ .EH-blog-content {
+  flex-direction: column;
+  text-align: center;
+ }
 }
 
 .EH-post-icon {
@@ -678,6 +1106,15 @@ font-weight: bolder;
     border-collapse: collapse;
     margin-bottom: 20px;
     font-family: Arial, sans-serif;
+}
+
+@media (max-width: 576px) {
+ .EH-tips-table {
+  font-size: 14px;
+ }
+ .EH-tips-table th, .EH-tips-table td {
+  padding: 8px 10px;
+ }
 }
 
 .EH-tips-table th, .EH-tips-table td {
@@ -710,6 +1147,30 @@ font-weight: bolder;
     text-align: center;
 }
 
+@media (max-width: 768px) {
+ .EH-staff {
+  margin: 20px auto;
+  padding: 15px;
+ }
+}
+
+.EH-staff h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+ .EH-staff h1 {
+  font-size: 2rem;
+ }
+}
+
+@media (max-width: 576px) {
+ .EH-staff h1 {
+  font-size: 1.8rem;
+ }
+}
+
 .EH-staff-list {
     display: flex;
     justify-content: space-around;
@@ -722,7 +1183,25 @@ font-weight: bolder;
     padding: 22px;
     border-radius: 8px;
     width: 200px;
+    max-width: 100%;
+    margin-bottom: 20px;
     transition: ease-in-out .2s;
+}
+
+@media (max-width: 768px) {
+ .EH-staff-member {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+ }
+}
+
+@media (max-width: 576px) {
+ .EH-staff-member {
+  width: 100%;
+  max-width: 280px;
+  padding: 15px;
+ }
 }
 .EH-staff-member:hover{
     transition: ease-in-out .2s;
@@ -760,6 +1239,21 @@ font-weight: bolder;
     width: 950px;
     height: 40px;
 }
+
+@media (max-width: 992px) {
+ .search{
+  width: 100%;
+  max-width: 600px;
+ }
+}
+
+@media (max-width: 576px) {
+ .search{
+  width: 100%;
+  max-width: 250px;
+ }
+}
+
 .EHsearchicon{
     height: 40px;
     display: block;
@@ -768,23 +1262,81 @@ font-weight: bolder;
     border: 1px solid #555;
     background-color: #5a555c3b;
 }
+
 .EHdropdown{
     text-align: end;
     padding-top: 15px;
     padding-right: 130px;
 }
+
+@media (max-width: 768px) {
+ .EHdropdown{
+  text-align: center;
+  padding-right: 0;
+  padding: 15px 20px;
+ }
+}
+
+.EHsearchbox{
+    padding: 20px;
+}
+
+@media (max-width: 576px) {
+ .EHsearchbox{
+  flex-direction: column;
+  padding: 10px;
+ }
+ .EHsearchicon{
+  width: 100%;
+  margin-top: 10px;
+ }
+}
 .EHproducts-containerr{
     display: flex;
     margin-top: 20px;
     justify-content: center;
-  
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+@media (max-width: 768px) {
+ .EHproducts-containerr{
+  gap: 15px;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHproducts-containerr{
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+ }
+}
+
 .EHproduct-cardd{
     padding: 15px;
     width: 300px;
-    height: 470px;
+    max-width: 100%;
+    height: auto;
+    min-height: 470px;
     border: 2px solid black;
-      margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+ .EHproduct-cardd{
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 20px auto;
+ }
+}
+
+@media (max-width: 576px) {
+ .EHproduct-cardd{
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+ }
 }
 .EHproduct-image >img{ 
     border-bottom: 2px solid black;
@@ -808,5 +1360,70 @@ font-weight: bolder;
     font-size: 25px;
     font-weight: bold;
     color: #1d3741;
-    
+
+}
+
+@media (max-width: 576px) {
+ .EHpages{
+  font-size: 18px;
+ }
+}
+
+/* General responsive improvements */
+@media (max-width: 768px) {
+ .EH-section{
+  padding: 50px 0;
+ }
+
+ .EHtitle >b >h1{
+  font-size: 40px;
+ }
+
+ .EHproduct-title h1{
+  font-size: 36px;
+ }
+
+ .EHSTORY-left h1{
+  font-size: 50px;
+ }
+}
+
+@media (max-width: 576px) {
+ .EH-section{
+  padding: 30px 0;
+ }
+
+ .EHtitle >b >h1{
+  font-size: 32px;
+ }
+
+ .EHproduct-title h1{
+  font-size: 28px;
+ }
+
+ .EHSTORY-left h1{
+  font-size: 40px;
+ }
+
+ .EHjourney-text >h2{
+  font-size: 30px;
+ }
+}
+
+/* Ensure all images are responsive */
+img {
+ max-width: 100%;
+ height: auto;
+}
+
+/* Button responsiveness */
+button {
+ min-height: 40px;
+}
+
+/* Form inputs responsive */
+@media (max-width: 576px) {
+ .EHcustominput{
+  margin-bottom: 15px;
+ }
 }
