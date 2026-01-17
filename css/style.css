@@ -136,7 +136,7 @@ body{
     min-height: 470px;
     border: 2px solid black;
     margin-bottom: 20px;
-    margin-left: 10px;
+    
 }
 
 @media (max-width: 768px) {
@@ -660,6 +660,58 @@ font-weight: bolder;
 .EHfooter-section{
     border-bottom: 2px solid #1d3741;
 }
+/* SERVICE CARDS */
+.EHservice-card {
+  background-color: #fff;
+  border-radius: 16px;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.EHservice-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+/* ICON */
+.EHcardicon i {
+  height: 80px;
+  width: 80px;
+  background-color: #5a73a433;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #38649a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.EHservice-card:hover .EHcardicon i {
+  background-color: #38649a;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* TITLE */
+.EHservice-card h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* MOBILE CENTERING */
+@media (max-width: 576px) {
+  .EHservice-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .EHcardicon {
+    margin-bottom: 15px;
+  }
+}
 
 @media (max-width: 768px) {
  .EHfooter-section{
@@ -854,6 +906,67 @@ font-weight: bolder;
     height: auto;
     margin: 0 10px;
 }
+/* OVER THE YEARS SECTION */
+.EH-overyears {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* LEFT TEXT */
+.EHoveryears-left h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.EHoveryears-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #38649a;
+}
+
+.EHoveryears-left p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+
+.EHoveryears-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 992px) {
+  .EH-overyears {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .EHoveryears-left p {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .EHoveryears-left h1 {
+    font-size: 36px;
+  }
+
+  .EHoveryears-left h2 {
+    font-size: 24px;
+  }
+
+  .EHoveryears-left p {
+    font-size: 16px;
+  }
+}
+
 .EHimglogo{
    border: none;
     border-radius: 0;
@@ -968,7 +1081,7 @@ font-weight: bolder;
 }
 .EH-title {
     text-align: center;
-    color: #1b5e20;
+    color: #1d3741;
     margin-bottom: 10px;
     font-size: 2.5rem;
 }
@@ -1010,13 +1123,13 @@ font-weight: bolder;
 .EH-service-item {
     margin-bottom: 25px;
     padding: 15px;
-    border-left: 5px solid #2e7d32;
+    border-left: 5px solid #1d3741;
     background-color: #f9f9f9;
     border-radius: 4px;
 }
 
 .EH-service-item h2 {
-    color: #2e7d32;
+    color: #1d3741;
     margin-bottom: 10px;
 }
 
@@ -1032,7 +1145,7 @@ font-weight: bolder;
 
 .EH-icon {
     font-size: 48px;       
-    color: #2e7d32;
+    color: #38649a;
     opacity: 0.9;
 }
 
@@ -1047,7 +1160,7 @@ font-weight: bolder;
 
 .EH-blog-title {
     text-align: center;
-    color: #1b5e20;
+    color: #38649a;
     margin-bottom: 10px;
 }
 
@@ -1064,7 +1177,7 @@ font-weight: bolder;
 .EH-blog-item {
     margin-bottom: 30px;
     padding: 15px;
-    border-left: 5px solid #2e7d32;
+    border-left: 5px solid #38649a;;
     background-color: #f9f9f9;
     border-radius: 4px;
 }
@@ -1085,13 +1198,13 @@ font-weight: bolder;
 
 .EH-post-icon {
     font-size: 50px;
-    color: #2e7d32;
+    color: #38649a;
     margin-left: 15px;
     opacity: 0.9;
 }
 
 .EH-post-title {
-    color: #2e7d32;
+    color: #38649a;
     margin-bottom: 10px;
 }
 
@@ -1118,13 +1231,13 @@ font-weight: bolder;
 }
 
 .EH-tips-table th, .EH-tips-table td {
-    border: 1px solid #2e7d32;
+    border: 1px solid  #5a73a433;
     padding: 12px 15px;
     text-align: left;
 }
 
 .EH-tips-table th {
-    background-color: #2e7d32;
+    background-color: #5a73a433;
     color: #ffffff;
 }
 
@@ -1217,7 +1330,7 @@ font-weight: bolder;
 }
 
 .EH-staff-member h3 {
-    color: #2e7d32;
+    color:  #1d3741;
     margin-bottom: 5px;
 }
 
