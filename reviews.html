@@ -3,240 +3,218 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"
-              href="./css/style.css">
-        <link rel="preconnect"
-              href="https://fonts.googleapis.com">
-        <link rel="preconnect"
-              href="https://fonts.gstatic.com"
-              crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
-              rel="stylesheet">
-        <link rel="stylesheet"
-              href="css/bootstrap.min.css">
-        <script src="https://kit.fontawesome.com/b0ec040935.js"
-                crossorigin="anonymous"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reviews - Dina Pharm</title>
 
-        <title>Dina Pharm</title>
+        <script src="https://kit.fontawesome.com/b0ec040935.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+            integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+            crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
 
     <body>
-        <div class="container-fluid">
-            <div class="row p-2 p-md-4 w-100 justify-content-between align-items-center">
-                <div class="col-6 col-md-3 EHlogo">
-                    <img src="./img/logo.png"
-                         alt=""
-                         class="img-fluid">
-                </div>
-                <div class="col-6 col-md-9 EHnavbar-right">
-                    <div class="d-flex d-md-none justify-content-end">
-                        <button class="btn btn-link text-dark"
-                                type="button"
-                                data-toggle="collapse"
-                                data-target="#mobileNav"
-                                aria-expanded="false">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                    </div>
-                    <div class="d-none d-md-flex EHbuttons justify-content-end align-items-center">
-                        <button type="button"
-                                onclick="window.location.href='./index.html'">Home</button>
-                        <button type="button"
-                                onclick="window.location.href='./contact.html'">Contact</button>
-                        <button type="button"
-                                onclick="window.location.href='./aboutus.html'">About Us</button>
-                        <button type="button"
-                                onclick="window.location.href='./products.html'">Products</button>
-                        <button type="button"
-                                onclick="window.location.href='./FAQ.html'">F.A.Q</button>
-                        <button type="button"
-                                onclick="window.location.href='./reviews.html'">Reviews</button>
-                        <button type="button"
-                                onclick="window.location.href='./services.html'">Services</button>
-                        <button type="button"
-                                onclick="window.location.href='./blog.html'">Blog</button>
-                        <button type="button"
-                                onclick="window.location.href='./OurTeam.html'">Our Team</button>
-                        <div class="EHcall-us-button ml-3">
-                            <button type="button"
-                                    onclick="window.location.href='./contact.html'">CALL US</button>
-                        </div>
-                    </div>
-                    <div class="collapse d-md-none"
-                         id="mobileNav">
-                        <div class="EHbuttons-mobile bg-white p-3 mt-2 rounded shadow">
-                            <button type="button"
-                                    onclick="window.location.href='./index.html'"
-                                    class="btn btn-link d-block">Home</button>
-                            <button type="button"
-                                    onclick="window.location.href='./contact.html'"
-                                    class="btn btn-link d-block">Contact</button>
-                            <button type="button"
-                                    onclick="window.location.href='./aboutus.html'"
-                                    class="btn btn-link d-block">About Us</button>
-                            <button type="button"
-                                    onclick="window.location.href='./products.html'"
-                                    class="btn btn-link d-block">Products</button>
-                            <button type="button"
-                                    onclick="window.location.href='./FAQ.html'"
-                                    class="btn btn-link d-block">F.A.Q</button>
-                            <button type="button"
-                                    onclick="window.location.href='./testimonial.html'"
-                                    class="btn btn-link d-block">Testimonial</button>
-                            <button type="button"
-                                    onclick="window.location.href='./services.html'"
-                                    class="btn btn-link d-block">Services</button>
-                            <button type="button"
-                                    onclick="window.location.href='./blog.html'"
-                                    class="btn btn-link d-block">Blog</button>
-                            <button type="button"
-                                    onclick="window.location.href='./OurTeam.html'"
-                                    class="btn btn-link d-block">Our Team</button>
-                            <div class="EHcall-us-button mt-3">
-                                <button class="w-100">CALL US</button>
-                            </div>
-                        </div>
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid p-2 p-md-4">
+                <a class="navbar-brand EHlogo" href="./index.html">
+                    <img src="./img/logo.png" alt="Dina Pharm Logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center EHbuttons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faq.html">F.A.Q</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./reviews.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ourteam.html">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link EHcall-us-button" href="./contact.html">
+                                <button type="button">CONTACT US</button>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="EH-section"
-             style="background-color: #f5f5f5;">
-            <div class="EHtestimonal-section">
-                <button class="EHtestimonal-button">Testimonial</button>
-                <div class="EHtestimonal-title"
-                     style="white-space: pre-line;">Let our customers tell you why
-                    they choose us</div>
-                <div class="EH-testimonal-carosuel">
-                    <div id="carouselExampleIndicators"
-                         class="carousel slide"
-                         data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators"
-                                data-slide-to="0"
-                                class="active"></li>
-                            <li data-target="#carouselExampleIndicators"
-                                data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators"
-                                data-slide-to="2"></li>
-                        </ol>
+        </nav>
+        <div class="EH-section EHreviews-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <button class="EHreviews-button mb-4">Customer Reviews</button>
+                    <h2 class="EHreviews-title">Let our customers tell you why they choose us</h2>
+                </div>
+
+                <div class="EHreviews-carousel-wrapper">
+                    <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class=" w-100">
-                                    <div class="EHcarousel-quotes">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nulla debitis
-                                            nihil
-                                            dolore hic quos fugiat dolor nam eius sed alias, laboriosam, officiis
-                                            aliquam
-                                            officia quia. Eum ducimus omnis aut.</p>
-                                        <div class="EHcarousel-author">
-                                            Elvedina Hoti
-                                        </div>
-                                        <div class="EHcarousel-place">
-                                            Mitrovice
-                                        </div>
+                                <div class="EHreview-card">
+                                    <div class="EHreview-stars mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
                                     </div>
-
+                                    <p class="EHreview-text">"The service at Dina Pharm is exceptional. The pharmacists
+                                        are knowledgeable and always willing to help. I've been a customer for years and
+                                        wouldn't go anywhere else!"</p>
+                                    <div class="EHreview-author">
+                                        <h5>Elvedina Hoti</h5>
+                                        <p>Mitrovice</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class=" w-100">
-                                    <div class="EHcarousel-quotes">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nulla debitis
-                                            nihil
-                                            dolore hic quos fugiat dolor nam eius sed alias, laboriosam, officiis
-                                            aliquam aliquam aliquam aliquam aliquam aliquam aliquam
-                                            officia quia. Eum ducimus omnis aut.</p>
-                                        <div class="EHcarousel-author">
-                                            Elvedina Hoti
-                                        </div>
-                                        <div class="EHcarousel-place">
-                                            Mitrovice
-                                        </div>
-                                    </div>
 
+                            <div class="carousel-item">
+                                <div class="EHreview-card">
+                                    <div class="EHreview-stars mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="EHreview-text">"Great pharmacy with excellent customer service! They have
+                                        a wide range of products and the staff is very professional. Fast delivery and
+                                        competitive prices. Highly recommended!"</p>
+                                    <div class="EHreview-author">
+                                        <h5>Arben Berisha</h5>
+                                        <p>Prishtina</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class=" w-100">
-                                    <div class="EHcarousel-quotes">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nulla debitis
-                                            nihil
-                                            dolore hic quos fugiat dolor nam eius sed alias, laboriosam, officiis
-                                            aliquam
-                                            officia quia. Eum ducimus omnis aut.</p>
-                                        <div class="EHcarousel-author">
-                                            Elvedina Hoti
-                                        </div>
-                                        <div class="EHcarousel-place">
-                                            Mitrovice
-                                        </div>
-                                    </div>
 
+                            <div class="carousel-item">
+                                <div class="EHreview-card">
+                                    <div class="EHreview-stars mb-3">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="EHreview-text">"I trust Dina Pharm for all my family's healthcare needs.
+                                        Professional service, quality products, and they always take the time to answer
+                                        any questions I have."</p>
+                                    <div class="EHreview-author">
+                                        <h5>Drita Krasniqi</h5>
+                                        <p>Gjakova</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev"
-                           href="#carouselExampleIndicators"
-                           role="button"
-                           data-slide="prev">
-                            <span class="carousel-control-prev-icon EHcarousel-arrow"
-                                  aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next "
-                           href="#carouselExampleIndicators"
-                           role="button"
-                           data-slide="next">
-                            <span class="carousel-control-next-icon EHcarousel-arrow"
-                                  aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon EHcarousel-arrow" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon EHcarousel-arrow" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-
             </div>
         </div>
-        <div class="container">
-            <div class="col">
-                <div class="py-4 row justify-content-between EHfooter-section">
-                    <div class="EHlogo">
-                        <img src="./img/logo.png"
-                             alt="">
+        <footer class="EHfooter">
+            <div class="container">
+                <div class="row py-4 EHfooter-section align-items-start">
+                    <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0 text-center text-md-start">
+                        <div class="EHlogo">
+                            <img src="./img/logo.png" alt="Dina Pharm Logo">
+                        </div>
                     </div>
-                    <div class="EHfooter-nav">
-                        <button type="button"
-                                onclick="window.location.href='./index.html'">Home</button>
-                        <button type="button"
-                                onclick="window.location.href='./contact.html'">Contact</button>
-                        <button type="button"
-                                onclick="window.location.href='./aboutus.html'">About Us</button>
-                        <button type="button"
-                                onclick="window.location.href='./products.html'">Products</button>
-                        <button type="button"
-                                onclick="window.location.href='./FAQ.html'">F.A.Q</button>
-                        <button type="button"
-                                onclick="window.location.href='./testimonial.html'">Testimonial</button>
-
+                    <div class="col-12 col-md-4 col-lg-6 mb-4 mb-md-0">
+                        <div class="EHfooter-nav">
+                            <div class="row g-0">
+                                <div class="col-6 col-sm-4 col-lg-4">
+                                    <a href="./index.html">Home</a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-4">
+                                    <a href="./aboutus.html">About Us</a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-4">
+                                    <a href="./products.html">Products</a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-4">
+                                    <a href="./services.html">Services</a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-4">
+                                    <a href="./faq.html">F.A.Q</a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-4">
+                                    <a href="./reviews.html">Reviews</a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-4">
+                                    <a href="./blog.html">Blog</a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-4">
+                                    <a href="./ourteam.html">Our Team</a>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-4">
+                                    <a href="./contact.html">Contact</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="EHfooter-social">
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                    <div class="col-12 col-md-4 col-lg-3 text-center text-md-end">
+                        <div class="EHfooter-social">
+                            <a href="https://www.facebook.com/" aria-label="Facebook"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" aria-label="Instagram"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/" aria-label="TikTok"><i
+                                    class="fa-brands fa-tiktok"></i></a>
+                        </div>
                     </div>
-
-
                 </div>
-                <div class="row w-100 d-flex justify-content-center py-4">
-                    <p class="font-weight-bold">© 2025 Dina Pharm. All rights reserved.</p>
+                <div class="row">
+                    <div class="col-12 text-center py-3 EHfooter-copyright">
+                        <p class="mb-0">© 2025 Dina Pharm. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
-
-        </div>
+        </footer>
 
     </body>
 
