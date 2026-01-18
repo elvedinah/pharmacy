@@ -34,12 +34,6 @@ body{
 .EHbuttons>button:hover::after  {
     width: 100% ;
 }
-
-.EHnavbar-right{
-    display: flex;
-    align-items: center;
-}
-
 .EHbuttons-mobile {
     border: 1px solid #1d3741;
 }
@@ -193,14 +187,6 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
-}
-
-@media (max-width: 768px) {
- .EHproducts-container{
-  justify-content: center;
-  gap: 15px;
- }
 }
 
 @media (max-width: 576px) {
